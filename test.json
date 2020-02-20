@@ -1,0 +1,533 @@
+{
+    "predefined": [
+        {
+            "title": "Math Functions",
+            "description": "predefined math functions. These can be called in any Macro-Plus sequence file.",
+            "funcs": {
+                "ABSF": {
+                    "returnType": "numeric",
+                    "description": "Absolute value",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expression",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric ABSF(numeric expression)"
+                },
+                "ACOSF": {
+                    "returnType": "numeric",
+                    "description": "Arccosine in radians",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expression",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric ACOSF(numeric expression)"
+                },
+                "ASINF": {
+                    "returnType": "numeric",
+                    "description": "Arcsine in radians",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expression",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric ASINF(numeric expression)"
+                },
+                "ATANF": {
+                    "returnType": "numeric",
+                    "description": "Arctangent in radians",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expression",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric ATANF(numeric expression)"
+                },
+                "COSF": {
+                    "returnType": "numeric",
+                    "description": "Cosine in radians",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expression",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric COSF(numeric expression)"
+                },
+                "EXPF": {
+                    "returnType": "numeric",
+                    "description": "Exponential (e raised to power)",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expression",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric EXPF(numeric expression)"
+                },
+                "GAUSSWTS": {
+                    "returnType": "numeric",
+                    "description": "Compute Gaussian quadrature weights for a set of input coordinates and weights (see detailed description)",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "num_input_pts",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "input_coord",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "input_wts",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "num_quad_pts",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "quad_coord",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "quad_wts",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric GAUSSWTS(numeric num_input_pts, numeric_array input_coord, numeric_array input_wts, numeric num_quad_pts, numeric_array quad_coord, numeric_array quad_wts)"
+                },
+                "LOGF": {
+                    "returnType": "numeric",
+                    "description": "Natural logarithm",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expression",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric LOGF(numeric expression)"
+                },
+                "LOG10F": {
+                    "returnType": "numeric",
+                    "description": "Common logarithm",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expression",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric LOG10F(numeric expression)"
+                },
+                "MAXF": {
+                    "returnType": "numeric",
+                    "description": "Returns maximum of expr1 and expr2",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expr1",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "expr2",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric MAXF(numeric expr1, numeric expr2)"
+                },
+                "MINF": {
+                    "returnType": "numeric",
+                    "description": "Returns minimum of expr1 and expr2",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expr1",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "expr2",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric MINF(numeric expr1, numeric expr2)"
+                },
+                "MODF": {
+                    "returnType": "numeric",
+                    "description": "Remainder after expr1 is divided by expr2",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expr1",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "expr2",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric MODF(numeric expr1, numeric expr2)"
+                },
+                "RANDF": {
+                    "returnType": "numeric",
+                    "description": "Returns a randomly generated number [0..1)",
+                    "parameters": [
+                        {
+                            "type": "",
+                            "name": "",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric RANDF()"
+                },
+                "ROUNDF": {
+                    "returnType": "numeric",
+                    "description": "Round to nearest integer",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expression",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric ROUNDF(numeric expression)"
+                },
+                "SINF": {
+                    "returnType": "numeric",
+                    "description": "Sine in radians",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expression",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric SINF(numeric expression)"
+                },
+                "SQRTF": {
+                    "returnType": "numeric",
+                    "description": "Square root",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expression",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric SQRTF(numeric expression)"
+                },
+                "TANF": {
+                    "returnType": "numeric",
+                    "description": "Tangent in radians",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expression",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric TANF(numeric expression)"
+                },
+                "SIGNF": {
+                    "returnType": "numeric",
+                    "description": "Returns absf(expr1) * sign(expr2)",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "expr1",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "expr2",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric SIGNF(numeric expr1, numeric expr2)"
+                },
+                "ZFRFIT": {
+                    "returnType": "numeric",
+                    "description": "Fits user data to fringe Zernike polynomials to specified order (see detailed description)",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "num_points",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "x",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "y",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "f",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "num_terms",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "coefs",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric ZFRFIT(numeric num_points, numeric_array x, numeric_array y, numeric_array f, numeric num_terms, numeric_array coefs)"
+                },
+                "ZRNFIT": {
+                    "returnType": "numeric",
+                    "description": "Fits user data to standard Zernike polynomials to specified order (see detailed description)",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "num_points",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "x",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "y",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "f",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "num_terms",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "coefs",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric ZRNFIT(numeric num_points, numeric_array x, numeric_array y, numeric_array f, numeric num_terms, numeric_array coefs)"
+                }
+            }
+        },
+        {
+            "title": "Optical Functions",
+            "description": "predefined optical functions. These can be called in any Macro-Plus sequence file.",
+            "funcs": {
+                "ABCD": {
+                    "returnType": "numeric",
+                    "description": "Constructs a ray transfer matrix that represents derivatives of the base ray configuration at  an ending surface with respect to changes in the position and direction of a base ray at a starting surface.",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "zoom_pos",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "wav_num",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "field_num",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "start_surface",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "end_surface",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "^start_ray_config",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "^final_ray_config",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "^outArray",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric ABCD(numeric zoom_pos, numeric wav_num, numeric field_num, numeric start_surface, numeric end_surface, numeric_array ^start_ray_config, numeric_array ^final_ray_config, numeric_array ^outArray)"
+                },
+                "AS_BUILT_ABC": {
+                    "returnType": "numeric",
+                    "description": "Performs a sensitivity tolerance analysis based on wavefront variance using the current set of tolerances and compensators and returns the quadratic, linear and cross terms plus the nominal wavefront variance (the C coefficient) for any zoom and field.",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "zoom",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "field",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "NRD",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "cross_terms",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "linear_terms",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric AS_BUILT_ABC(numeric zoom, numeric field, numeric NRD, numeric_array cross_terms, numeric_array linear_terms)"
+                },
+                "AS_BUILT_VAR": {
+                    "returnType": "numeric",
+                    "description": "If TOR has not been previously run on the lens, performs a sensitivity tolerance analysis based on wavefront variance using the current set of tolerances and compensators and returns the statistical as-built performance information for any zoom and field.\\n If TOR has been previously run on the lens, returns the statistical as-built performance information generated by TOR.",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "zoom",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "field",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "NRD",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "output-type",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric AS_BUILT_VAR(numeric zoom, numeric field, numeric NRD, numeric output-type)"
+                },
+                "BESTSPH": {
+                    "returnType": "numeric",
+                    "description": "Curvature of best fitting sphere, specifying: - surface number (arg1) - zoom position (arg2) - min and max y coordinates (arg3 and arg4, respectively)",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "surface",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "zoom_pos",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "min_height",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "max_height",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric BESTSPH(numeric surface, numeric zoom_pos, numeric min_height, numeric max_height)"
+                },
+                "CNVTFIELD": {
+                    "returnType": "numeric",
+                    "description": "Converts field specification to object height, paraxial image height, real image height, or field angle in object space.",
+                    "parameters": [
+                        {
+                            "type": "string",
+                            "name": "field_type",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric CNVTFIELD(string field_type)"
+                },
+                "GAUSSBEAM": {
+                    "returnType": "numeric",
+                    "description": "Uses BEA option to trace a \"slow\" Gaussian beam through an optical system and calculate at the specified surface the beam radius, beam orientation, wavefront radius of curvature, waist position and waist radius.",
+                    "parameters": [
+                        {
+                            "type": "numeric",
+                            "name": "surface_num",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "zoom_pos",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "field_num",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric",
+                            "name": "wave_num",
+                            "description": ""
+                        },
+                        {
+                            "type": "numeric array",
+                            "name": "^input_array",
+                            "description": ""
+                        },
+                        {
+                            "type": "string",
+                            "name": "output_string",
+                            "description": ""
+                        }
+                    ],
+                    "signature": "numeric GAUSSBEAM(numeric surface_num, numeric zoom_pos, numeric field_num, numeric wave_num, numeric_array ^input_array, string output_string)"
+                }
+            }
+        }
+    ]
+}
